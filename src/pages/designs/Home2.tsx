@@ -10,7 +10,7 @@ interface HomeProps {
 }
 
 const Home2: React.FC<HomeProps> = ({ cityName = "Elizabeth City" }) => {
-  const isElizabeth City = cityName === "Elizabeth City";
+  const isElizabethCity = cityName === "Elizabeth City";
 
   return (
     <div className="font-playfair bg-[#FAFAFA] text-black overflow-x-hidden">
@@ -86,7 +86,7 @@ const Home2: React.FC<HomeProps> = ({ cityName = "Elizabeth City" }) => {
                   <h3 className="text-3xl font-bold tracking-tight">Structural Foundations</h3>
                   <p className="text-black text-[10px] uppercase tracking-[0.4em] mt-2">TECHNICAL ENGINEERING benchmark 98% proctor</p>
                 </div>
-                <Link to={isElizabeth City ? "/foundations" : `/${cityName.toLowerCase().replace(' ', '-')}/foundations`} className="text-[10px] font-black uppercase tracking-widest border-b border-blue-600 pb-1 hover:text-black hover:border-gray-400 transition-all">Details</Link>
+                <Link to={isElizabethCity ? "/foundations" : `/${cityName.toLowerCase().replace(' ', '-')}/foundations`} className="text-[10px] font-black uppercase tracking-widest border-b border-blue-600 pb-1 hover:text-black hover:border-gray-400 transition-all">Details</Link>
               </div>
             </div>
             <div className="md:col-span-5 space-y-8 pt-20" data-aos="fade-left">
@@ -98,7 +98,7 @@ const Home2: React.FC<HomeProps> = ({ cityName = "Elizabeth City" }) => {
                   <h3 className="text-3xl font-bold tracking-tight">Artisan Stamped Patios</h3>
                   <p className="text-black text-[10px] uppercase tracking-[0.4em] mt-2">DECORATIVE CURATION UV-STABLE PIGMENTS</p>
                 </div>
-                <Link to={isElizabeth City ? "/patios" : `/${cityName.toLowerCase().replace(' ', '-')}/patios`} className="text-[10px] font-black uppercase tracking-widest border-b border-blue-600 pb-1 hover:text-black hover:border-gray-400 transition-all">Details</Link>
+                <Link to={isElizabethCity ? "/patios" : `/${cityName.toLowerCase().replace(' ', '-')}/patios`} className="text-[10px] font-black uppercase tracking-widest border-b border-blue-600 pb-1 hover:text-black hover:border-gray-400 transition-all">Details</Link>
               </div>
             </div>
           </div>
@@ -151,7 +151,7 @@ const Home2: React.FC<HomeProps> = ({ cityName = "Elizabeth City" }) => {
             <div className="flex flex-col gap-12 border-t border-gray-200 pt-20">
               <div className="group">
                 <p className="text-[10px] uppercase tracking-[0.5em] font-black text-black mb-4">CONNECT</p>
-                <a href="tel:(252) 765-4639" className="text-4xl font-light hover:italic transition-all text-black underline underline-offset-[12px] decoration-blue-200">743.228.2305</a>
+                <a href="tel:(252) 765-4639" className="text-4xl font-light hover:italic transition-all text-black underline underline-offset-[12px] decoration-blue-200">(252) 765-4639</a>
               </div>
             </div>
           </div>
